@@ -457,6 +457,9 @@ div, p{
     justify-content: space-between;
     box-shadow: none;
 }
+.nav-transparent .nav-dropdown span{
+    background-color: #ffdcdc;
+}
 .floated-right{
     float: right;
 }
