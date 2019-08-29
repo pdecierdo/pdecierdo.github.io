@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.1.95/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>About Me</title>
 </head>
@@ -22,7 +24,22 @@
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
+        <div class="nav-dropdown" id="navDropDown" shown="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
+    <div class="hidden nav-dropdown-menu-container" id="dropdownContents">
+        <ul class="vertical-nav-items">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
     <div class="big-banner">
         <div class="banner-content">
             <img src="images/Paul.png" alt="" class="medium-image">
@@ -118,6 +135,7 @@
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 <script>
     var navbar = document.getElementById('navbar');
 

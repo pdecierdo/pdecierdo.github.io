@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.1.95/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Paul's Online Resume</title>
 </head>
 <body>
+    <div class="hidden nav-dropdown-menu-container" id="dropdownContents">
+        <ul class="vertical-nav-items">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
     <nav class="navbar">
         <div class="navbar-brand">
             <span class="brand-text">
@@ -24,6 +34,11 @@
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
+        <div class="nav-dropdown" id="navDropDown" shown="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
     <div class="main-container">
         <section class="banner">
@@ -32,7 +47,7 @@
                     <div class="col">
                         <img src="images/pp.jpg" class="bordered-round"></img>
                     </div>
-                    <div class="col wid">
+                    <div class="col wide">
                         <div class="profile-details">
                             <h1 id="profName">Paul S. Decierdo</h1>
                             <div class="label-outline semibold">University of the Philippines Visayas</div>
@@ -115,7 +130,7 @@
                     <div class="project" modal-id="modal1">
                         <div class="cols">
                             <div class="col project-left">
-                                <div class="project-title">Student's Corner</div>
+                                <div class="project-title">Students' Corner</div>
                                 <div class="tags">
                                     <div class="tag">Software</div>
                                     <div class="tag">Inventory</div>
@@ -127,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="col project-right">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident qui quos est sunt consectetur blanditiis fuga hic accusamus nam nesciunt inventore, nostrum doloremque assumenda eum id vel, dignissimos quidem nobis autem illum veniam recusandae voluptatibus voluptate. Dolores praesentium sit exercitationem qui alias ea expedita, officiis doloribus vel vero dolore repudiandae?
+                                Students' Corner is a software application that provides features such as shopping for your school-related needs and discussing educational topics in the forum.
                             </div>
                         </div>
                     </div>
@@ -147,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="col project-right">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident qui quos est sunt consectetur blanditiis fuga hic accusamus nam nesciunt inventore, nostrum doloremque assumenda eum id vel, dignissimos quidem nobis autem illum veniam recusandae voluptatibus voluptate. Dolores praesentium sit exercitationem qui alias ea expedita, officiis doloribus vel vero dolore repudiandae?
+                                The AOV Inventory System was already developed beforehand by Eversun Software Corporation Philippines' software development team. Along with my co-interns, we joined the team as UI/UX Developers.
                             </div>
                         </div>
                     </div>
@@ -167,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="col project-right">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident qui quos est sunt consectetur blanditiis fuga hic accusamus nam nesciunt inventore, nostrum doloremque assumenda eum id vel, dignissimos quidem nobis autem illum veniam recusandae voluptatibus voluptate. Dolores praesentium sit exercitationem qui alias ea expedita, officiis doloribus vel vero dolore repudiandae?
+                                This project was for our Special Problem class and it has two modules: Document Management System and Personnel Recording System. I developed the Document Management System module. And my co-developers developed the remaining module and other core functionalities.
                             </div>
                         </div>
                     </div>
@@ -181,7 +196,7 @@
                     <span class="text-title">Programming Languages</span>
                 </h3>
                 <div class="cols-wrapped">
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/python.png" alt="Python" class="small-image">
@@ -201,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/c.png" alt="C Programming" class="small-image">
@@ -221,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/js.png" alt="Javascript" class="small-image">
@@ -241,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/cplus.png" alt="C++" class="small-image">
@@ -261,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/ruby.png" alt="Ruby" class="small-image">
@@ -281,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/php.png" alt="PHP" class="small-image">
@@ -301,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col size-50">
+                    <div class="col one-third">
                         <div class="tile">
                             <div class="tile-image">
                                 <img src="images/java.png" alt="Java" class="small-image">
@@ -330,17 +345,12 @@
                     <i class="icon mdi mdi-thought-bubble-outline"></i>
                     <span class="text-title">Skills</span>
                 </h3>
-                <div class="input-skills">
-                    <input type="text" class="add-skill-field" placeholder="Add a skill">
-                </div>
                 <div class="skill-set">
                     <div class="skill" id="skill1">
                         <span class="skill-tag">Graphic Design</span>
-                        <button class="skill-button" skill-id="skill1">&times;</button>
                     </div>
                     <div class="skill" id="skill2">
                         <span class="skill-tag">Photoshop</span>
-                        <button class="skill-button" skill-id="skill2">&times;</button>
                     </div>
                 </div>
             </div>
@@ -366,7 +376,7 @@
                     </div>
                 </div>
                 <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim est, molestiae officiis earum totam praesentium sequi, ab facere illo, odio quod qui! Assumenda cupiditate nisi, molestias beatae aperiam eaque.
+                    Students' Corner is a software application that provides features such as shopping for your school-related needs and discussing educational topics in the forum.
                 </p>
 
                 <div class="title-divider">
@@ -433,7 +443,7 @@
                     </div>
                 </div>
                 <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim est, molestiae officiis earum totam praesentium sequi, ab facere illo, odio quod qui! Assumenda cupiditate nisi, molestias beatae aperiam eaque.
+                        The AOV Inventory System was already developed beforehand by Eversun Software Corporation Philippines' software development team. Along with my co-interns, we joined the team as UI/UX Developers.
                 </p>
                 <div class="title-divider">
                     Image(s)
@@ -499,7 +509,7 @@
                     </div>
                 </div>
                 <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim est, molestiae officiis earum totam praesentium sequi, ab facere illo, odio quod qui! Assumenda cupiditate nisi, molestias beatae aperiam eaque.
+                        This project was for our Special Problem class and it has two modules: Document Management System and Personnel Recording System. I developed the Document Management System module. And my co-developers developed the remaining module and other core functionalities.
                 </p>
 
                 <div class="title-divider">
@@ -546,67 +556,6 @@
         </div>
     </div>
 </body>
-<script>
-    function $classes(className){
-        return document.getElementsByClassName(className);
-    }
-
-    function $id(id){
-        return document.getElementById(id);
-    }
-
-    // Viewing of images by clicking on smaller images
-    var imageThumbs = $classes('image-thumbnail');
-    for(var i = 0; i < imageThumbs.length; i++){
-        var imageThumb = imageThumbs[i];
-        imageThumb.addEventListener('click', function(){
-            var imageSource = this.src;
-            var imageContainerId = this.getAttribute('image-container-id');
-            var imageContainer = $id(imageContainerId);
-
-            imageContainer.src = imageSource;
-            if(this.id !== imageContainer.getAttribute('current-image')){
-                this.classList.add('active-img');
-                $id(imageContainer.getAttribute('current-image')).classList.remove('active-img');
-            }
-            imageContainer.setAttribute('current-image', this.id);
-        });
-    }
-
-    // For modals
-    var projects = $classes('project');
-    for(var i = 0; i < projects.length; i++){
-        var project = projects[i];
-        project.addEventListener('click', function(){
-            var modalId = this.getAttribute('modal-id');
-            var modal = $id(modalId);
-            modal.style.display = 'block';
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        });
-    }
-
-    var closeBtns = $classes('close');
-    for(var i = 0; i < projects.length; i++){
-        var closeBtn = closeBtns[i];
-        closeBtn.addEventListener('click', function(){
-            var modalId = this.getAttribute('modal-id');
-            var modal = $id(modalId);
-            modal.style.display = 'none';  
-        });
-    }
-
-    var skillBtns = $classes("skill-button");
-    for(var i = 0; i < skillBtns.length; i++){
-        skillBtns[i].addEventListener('click', function(){
-            var id = this.getAttribute('skill-id');
-            var skillTag = $id(id);
-            skillTag.remove();
-        });
-    }
-</script>
+<script src="js/script.js"></script>
+<script src="js/index.js"></script>
 </html>
